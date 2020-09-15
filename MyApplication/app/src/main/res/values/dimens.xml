@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_margin_bottom">12dp</dimen>
+    <item name="skip_horizontal_bias" type="integer" format="float">0.049</item>
+    <item name="vertical_bias" type="integer" format="float">0.963</item>
+    <item name="next_horizontal_bias" type="integer" format="float">0.95</item>
+</resources>

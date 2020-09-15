@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Child Care</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Opening Page</string>
+    <string name="on_boarding_first_label">OnBoarding First</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+
+
+    <!--Titles-->
+    <string name="first_slide_title">Welcome to child care</string>
+    <string name="second_slide_title">Track your Kids Growth</string>
+    <string name="third_slide_title">Get kids Nutritional facts</string>
+    <string name="fourth_slide_title"> Notifies your Kids’ Vaccination dates</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">An App  for your child health, Keep track your Child health ,growth, nutrition information. </string>
+    <string name="second_slide_desc"> Child care App Helps you to track your Kid Height and weight.</string>
+    <string name="third_slide_desc">  Child care App provides Nutritional information based on your kid’s age.</string>
+    <string name="fourth_slide_desc">  Child care App notifies you about your Kid Vaccination dates. </string>
+    <string name="welcome_page_label">welcome</string>
+    <string name="on_boarding_second_label">onboarding</string>
+    <string name="on_boarding_third_label">onboardingthree</string>
+    <string name="Sign_up_page">signup</string>
+    <string name="Login_Page">Login</string>
+    <string name="Child_details">Child_details</string>
+    <string name="Vaccination">Vaccination</string>
+</resources>

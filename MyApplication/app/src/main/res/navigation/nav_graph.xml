@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_OnBoardingOne"
+            app:destination="@id/OnBoardingFirst" />
+    </fragment>
+    <fragment
+        android:id="@+id/OnBoardingFirst"
+        android:name="com.example.myapplication.OnBoardingFirstPage"
+        android:label="@string/on_boarding_first_label"
+        tools:layout="@layout/on_boarding_first">
+
+        <action
+            android:id="@+id/action_OnBoardingFirst_to_OnBoardingSecond"
+            app:destination="@id/OnBoardingSecond" />
+        <action
+            android:id="@+id/action_OnBoardingFirst_to_WelcomePage"
+            app:destination="@id/WelcomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/OnBoardingSecond"
+        android:name="com.example.myapplication.OnBoardingSecondPage"
+        android:label="@string/on_boarding_second_label"
+        tools:layout="@layout/on_boarding_second">
+
+        <action
+            android:id="@+id/action_OnBoardingSecond_to_OnBoardingThird"
+            app:destination="@id/OnBoardingThird" />
+        <action
+            android:id="@+id/action_OnBoardingSecond_to_WelcomePage"
+            app:destination="@id/WelcomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/OnBoardingThird"
+        android:name="com.example.myapplication.OnBoardingThirdPage"
+        android:label="@string/on_boarding_third_label"
+        tools:layout="@layout/on_boarding_third">
+
+        <action
+            android:id="@+id/action_OnBoardingThird_to_WelcomePage"
+            app:destination="@id/WelcomePage" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WelcomePage"
+        android:name="com.example.myapplication.WelcomePage"
+        android:label="@string/welcome_page_label"
+        tools:layout="@layout/welcome_page">
+        <action
+        android:id="@+id/action_WelcomePage_to_SignUpPage"
+        app:destination="@id/SignUpPage" />
+
+        <action
+            android:id="@+id/action_WelcomePage_to_LoginPage"
+            app:destination="@id/LoginPage" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/SignUpPage"
+        android:name="com.example.myapplication.SignUpPage"
+        android:label="@string/Sign_up_page"
+        tools:layout="@layout/sign_up">
+
+        <action
+            android:id="@+id/action_SignUpPage_to_LoginPage"
+            app:destination="@id/LoginPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginPage"
+        android:name="com.example.myapplication.LoginPage"
+        android:label="@string/Login_Page"
+        tools:layout="@layout/login_page">
+        <action
+            android:id="@+id/action_LoginPage_to_ChildDetails"
+            app:destination="@id/ChildDetails" />
+        <action
+            android:id="@+id/actions_LoginPage_to_Vaccination"
+            app:destination="@id/VaccinationPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChildDetails"
+        android:name="com.example.myapplication.ChildDetails"
+        android:label="@string/Child_details"
+        tools:layout="@layout/child_details">
+        <action
+            android:id="@+id/action_ChildDetails_to_Vaccination"
+            app:destination="@id/VaccinationPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/VaccinationPage"
+        android:name="com.example.myapplication.VaccinationPage"
+        android:label="@string/Vaccination"
+        tools:layout="@layout/vaccination_page">
+
+    </fragment>
+
+</navigation>
